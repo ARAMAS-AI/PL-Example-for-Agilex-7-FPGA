@@ -1,5 +1,5 @@
 Synthesis report
-Tue Jan  6 16:45:21 2026
+Tue Jan  6 22:37:29 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -48,12 +48,12 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Synthesis Summary                                                                 ;
 +--------------------------------------+--------------------------------------------+
-; Synthesis Status                     ; Successful - Tue Jan  6 16:45:21 2026      ;
+; Synthesis Status                     ; Successful - Tue Jan  6 22:37:28 2026      ;
 ; Revision Name                        ; blinky_led                                 ;
 ; Top-level Entity Name                ; blinky_led                                 ;
 ; Family                               ; Agilex 7                                   ;
 ; Quartus Prime Version                ; 25.3.0 Build 109 09/24/2025 SC Pro Edition ;
-; Device                               ; AGIB027R29A1E1VB                           ;
+; Device                               ; AGIB027R29A1E1V                            ;
 ; Logic utilization estimate (in ALMs) ; 20 / 912,800 ( < 1 % )                     ;
 ; Total dedicated logic registers      ; 27                                         ;
 ; Estimated DSP Blocks Post-Merging    ; 0                                          ;
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------+-------------------------+-------------------------+
 ; Option                                                                          ; Setting                 ; Default Value           ;
 +---------------------------------------------------------------------------------+-------------------------+-------------------------+
-; Device                                                                          ; AGIB027R29A1E1VB        ;                         ;
+; Device                                                                          ; AGIB027R29A1E1V         ;                         ;
 ; Top-level entity name                                                           ; blinky_led              ; blinky_led              ;
 ; Family name                                                                     ; Agilex 7                ; Cyclone 10 GX           ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                      ; On                      ;
@@ -169,14 +169,14 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------+-------------------------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synthesis Source Files Read                                                                                                                                                                                                                                                       ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
-; File Name with User-Entered Path ; File Type                                                                   ; File Name with Absolute Path                                                            ; Library ; IP Source ; Include Files ; MD5                              ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
-; blinky_led.v                     ; User-Specified Verilog HDL File                                             ; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v ;         ;           ;               ; 1a1b648b9d959cd0ce9cc156709a1a93 ;
-; timing.sdc                       ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/timing.sdc   ;         ;           ;               ; 37eccc2f14b0f76d021eabbd321d4a68 ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                                                                                                                ;
++----------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; File Name with User-Entered Path ; File Type                                                                   ; File Name with Absolute Path                                                                     ; Library ; IP Source ; Include Files ; MD5                              ;
++----------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; blinky_led.v                     ; User-Specified Verilog HDL File                                             ; D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v ;         ;           ;               ; 1a1b648b9d959cd0ce9cc156709a1a93 ;
+; timing.sdc                       ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/timing.sdc   ;         ;           ;               ; 37eccc2f14b0f76d021eabbd321d4a68 ;
++----------------------------------+-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -299,14 +299,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------+----------+-------+---------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; General Warnings                                                                                                                                                                                                                                                                                                   ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Message ID ; Severity         ; Count ; Sample Warning                                                                                                                                                                                                                                                             ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 20759      ; Critical Warning ; 1     ; Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.                                                                                      ;
-; 21620      ; Warning          ; 1     ; Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; General Warnings                                                                                                                                                                                                                                                                                                            ;
++------------+------------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity         ; Count ; Sample Warning                                                                                                                                                                                                                                                                      ;
++------------+------------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 20759      ; Critical Warning ; 1     ; Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.                                                                                               ;
+; 21620      ; Warning          ; 1     ; Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information ;
++------------+------------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -315,8 +315,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 16:45:10 2026
-    Info: System process ID: 35432
+    Info: Processing started: Tue Jan  6 22:37:18 2026
+    Info: System process ID: 63328
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -326,14 +326,14 @@ Info (21958): Initialized Quartus Message Database
 Info: Analyzing source files
 Critical Warning (20759): Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.
 Info: Elaborating from top-level entity "blinky_led"
-Warning (13469): Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) File: D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v Line: 20
+Warning (13469): Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) File: D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v Line: 20
 Info: Found 1 design entities
 Info: There are 1 partitions after elaboration.
 Info: DA report generation in native DNI mode
 Info (21615): Running Design Assistant Rules for snapshot 'partitioned'
 Info: No waiver waived any violations
 Info (22360): Design Assistant Results: 9 of 10 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
-Warning (21620): Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information
+Warning (21620): Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information
 Info (21621): Design Assistant Results: 0 of 1 Medium severity rules issued violations in snapshot 'partitioned'
 Info (21622): Design Assistant Results: 0 of 8 Low severity rules issued violations in snapshot 'partitioned'
 Info: Synthesizing partition "root_partition"
@@ -347,12 +347,12 @@ Info (21615): Running Design Assistant Rules for snapshot 'synthesized'
 Info: No waiver waived any violations
 Info (22360): Design Assistant Results: 12 of 13 enabled rules passed, and 7 rules was disabled, in snapshot 'synthesized'
 Info (21661): Design Assistant Results: 0 of 1 High severity rules issued violations in snapshot 'synthesized'
-Info (21621): Design Assistant Results: 1 of 6 Medium severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.synthesized.rpt' for more information
+Info (21621): Design Assistant Results: 1 of 6 Medium severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.synthesized.rpt' for more information
 Info (21622): Design Assistant Results: 0 of 6 Low severity rules issued violations in snapshot 'synthesized'
 Info: Quartus Prime Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 762 megabytes
-    Info: Processing ended: Tue Jan  6 16:45:22 2026
-    Info: Elapsed time: 00:00:12
-    Info: System process ID: 35432
+    Info: Processing ended: Tue Jan  6 22:37:29 2026
+    Info: Elapsed time: 00:00:11
+    Info: System process ID: 63328
 
 

@@ -1,5 +1,5 @@
 Flow report for blinky_led
-Tue Jan  6 17:26:24 2026
+Tue Jan  6 22:53:03 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -19,12 +19,12 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Tue Jan  6 17:26:24 2026      ;
+; Flow Status                     ; Successful - Tue Jan  6 22:53:03 2026      ;
 ; Quartus Prime Version           ; 25.3.0 Build 109 09/24/2025 SC Pro Edition ;
 ; Revision Name                   ; blinky_led                                 ;
 ; Top-level Entity Name           ; blinky_led                                 ;
 ; Family                          ; Agilex 7                                   ;
-; Device                          ; AGIB027R29A1E1VB                           ;
+; Device                          ; AGIB027R29A1E1V                            ;
 ; Timing Models                   ; Final                                      ;
 ; Power Models                    ; Final                                      ;
 ; Device Status                   ; Final                                      ;
@@ -45,23 +45,23 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/06/2026 16:45:12 ;
+; Start date & time ; 01/06/2026 22:37:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; blinky_led          ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                              ;
-+--------------------------+-----------------------------------------------------------------------------------------+---------------+-------------+------------+
-; Assignment Name          ; Value                                                                                   ; Default Value ; Entity Name ; Section Id ;
-+--------------------------+-----------------------------------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID    ; 176305466433098.176769811235432                                                         ; --            ; --          ; --         ;
-; FLOW_DISABLE_ASSEMBLER   ; On                                                                                      ; Off           ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP   ; 100                                                                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP   ; 0                                                                                       ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY ; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files ; --            ; --          ; --         ;
-+--------------------------+-----------------------------------------------------------------------------------------+---------------+-------------+------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                       ;
++--------------------------+--------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                                                                                            ; Default Value ; Entity Name ; Section Id ;
++--------------------------+--------------------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 176305466433098.176771924063328                                                                  ; --            ; --          ; --         ;
+; FLOW_DISABLE_ASSEMBLER   ; On                                                                                               ; Off           ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP   ; 100                                                                                              ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP   ; 0                                                                                                ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/output_files ; --            ; --          ; --         ;
++--------------------------+--------------------------------------------------------------------------------------------------+---------------+-------------+------------+
 
 
 +------------------------------------------------------+
@@ -69,12 +69,11 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 +-----------------+--------------+---------------------+
 ; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
 +-----------------+--------------+---------------------+
-; Synthesis       ; 00:00:12     ; 762 MB              ;
-; Fitter          ; 00:17:58     ; 14580 MB            ;
-; Timing Analyzer ; 00:00:22     ; 1750 MB             ;
-; Power Analyzer  ; 00:06:02     ; 4995 MB             ;
-; Assembler       ; 00:02:19     ; 8776 MB             ;
-; Total           ; 00:26:53     ; --                  ;
+; Synthesis       ; 00:00:11     ; 762 MB              ;
+; Fitter          ; 00:11:40     ; 15942 MB            ;
+; Timing Analyzer ; 00:00:26     ; 1750 MB             ;
+; Assembler       ; 00:02:25     ; 8779 MB             ;
+; Total           ; 00:14:42     ; --                  ;
 +-----------------+--------------+---------------------+
 
 
@@ -86,7 +85,6 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 ; Synthesis       ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
 ; Fitter          ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
 ; Timing Analyzer ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
-; Power Analyzer  ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
 ; Assembler       ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
 +-----------------+------------------+------------+------------+----------------+
 
@@ -97,7 +95,6 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 quartus_syn --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 quartus_fit --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 quartus_sta blinky_led -c blinky_led --mode=finalize
-quartus_pow --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 quartus_asm --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 
 

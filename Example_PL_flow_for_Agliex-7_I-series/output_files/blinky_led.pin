@@ -82,7 +82,7 @@
  ---------------------------------------------------------------------------------
 
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-CHIP  "blinky_led"  ASSIGNED TO AN: AGIB027R29A1E1VB
+CHIP  "blinky_led"  ASSIGNED TO AN: AGIB027R29A1E1V
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment : Package Delay
 -----------------------------------------------------------------------------------------------------------------------------

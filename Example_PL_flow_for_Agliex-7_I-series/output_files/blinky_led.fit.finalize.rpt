@@ -1,5 +1,5 @@
 Fitter Finalize Stage Report for blinky_led
-Tue Jan  6 17:03:17 2026
+Tue Jan  6 22:49:08 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -71,8 +71,8 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 16:45:23 2026
-    Info: System process ID: 81952
+    Info: Processing started: Tue Jan  6 22:37:31 2026
+    Info: System process ID: 32680
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = blinky_led
@@ -81,6 +81,6 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Info (18258): Fitter Physical Synthesis operations beginning
 Info (18259): Fitter Physical Synthesis operations ending: elapsed time is 00:00:02
-Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:31
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:55
 
 

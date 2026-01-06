@@ -1,5 +1,5 @@
 Fitter Plan Stage Report for blinky_led
-Tue Jan  6 16:47:23 2026
+Tue Jan  6 22:39:28 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -4330,7 +4330,7 @@ Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off b
 Info (16677): Loading synthesized database.
 Info (16734): Loading "synthesized" snapshot for partition "root_partition".
 Info (16678): Successfully loaded synthesized database: elapsed time is 00:00:11.
-Info (119006): Selected device AGIB027R29A1E1VB for design "blinky_led"
+Info (119006): Selected device AGIB027R29A1E1V for design "blinky_led"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Info (171004): Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
@@ -4338,7 +4338,7 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Info (12262): Starting Fitter periphery placement operations
 Info (12290): Loading the periphery placement data.
-Info (12291): Periphery placement data loaded: elapsed time is 00:00:36
+Info (12291): Periphery placement data loaded: elapsed time is 00:00:35
 Info (12627): Pin ~PWRMGT_SCL~ is reserved at location ML71
 Info (12627): Pin ~ALTERA_AVSTx8_DATA2~ is reserved at location LR63
 Info (12627): Pin ~ALTERA_MSEL0~ is reserved at location LB62
@@ -4357,7 +4357,7 @@ Info (12627): Pin ~PWRMGT_SDA~ is reserved at location ML67
 Info (12627): Pin ~ALTERA_AVSTx8_DATA6_AS_nRST~ is reserved at location KW63
 Info (12627): Pin ~ALTERA_AVSTx8_CLK~ is reserved at location MD64
 Info (11685): 1 differential I/O pins do not have complementary pins. As a result, the Fitter automatically creates the complementary pins
-    Info (11684): Differential I/O pin "clk" does not have a complementary pin. As a result, the Fitter automatically creates the complementary pin "clk(n)" File: D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v Line: 3
+    Info (11684): Differential I/O pin "clk" does not have a complementary pin. As a result, the Fitter automatically creates the complementary pin "clk(n)" File: D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v Line: 3
 Warning (25315): Some pins are missing drive strength (current strength) and/or slew rate assignments. Refer to the I/O Assignment Warnings report for details.
 Info (16210): Plan updated with currently enabled project assignments.
 Info (12295): Periphery placement of all unplaced cells complete: elapsed time is 00:00:00

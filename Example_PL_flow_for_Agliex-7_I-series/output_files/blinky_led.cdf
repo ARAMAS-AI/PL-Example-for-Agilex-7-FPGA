@@ -4,7 +4,11 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(AGIB027R29AB) Path("D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/") File("blinky_led.sof") MfrSpec(OpMask(1));
+		Device PartName(AGIB027R29A) Path("D:/FILES/Projects/Aramas.ai/Projects/Basic_PL/Example_PL_flow_for_Agliex-7_I-series/output_files/") File("blinky_led.sof") MfrSpec(OpMask(1));
+	P ActionCode(Ign)
+		Device PartName(1_BIT_TAP) MfrSpec(OpMask(0));
+	P ActionCode(Ign)
+		Device PartName(VTAP10) MfrSpec(OpMask(0));
 
 ChainEnd;
 

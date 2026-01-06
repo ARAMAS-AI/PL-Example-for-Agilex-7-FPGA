@@ -1,5 +1,5 @@
 Fitter Retime Stage Report for blinky_led
-Tue Jan  6 17:01:46 2026
+Tue Jan  6 22:47:12 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -74,8 +74,8 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 16:45:23 2026
-    Info: System process ID: 81952
+    Info: Processing started: Tue Jan  6 22:37:31 2026
+    Info: System process ID: 32680
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = blinky_led
