@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Tue Jan  6 14:54:00 2026
+Revision Name : blinky_led
+Top-level Entity Name : blinky_led
+Family : Agilex 7
+Quartus Prime Version : 25.3.0 Build 109 09/24/2025 SC Pro Edition
+Device : AGIB027R29A1E1VB
+Logic utilization estimate (in ALMs) : 18 / 912,800 ( < 1 % )
+Total dedicated logic registers : 27
+Estimated DSP Blocks Post-Merging : 0

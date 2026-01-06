@@ -1,0 +1,100 @@
+Synthesis report
+Tue Jan  6 14:53:29 2026
+Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Analysis Summary
+  3. Design Analysis Source Files Read
+  4. Warnings for blinky_led.v
+  5. General Warnings
+  6. Design Analysis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++----------------------------------------------------------------+
+; Design Analysis Summary                                        ;
++------------------------+---------------------------------------+
+; Design Analysis Status ; Successful - Tue Jan  6 14:53:24 2026 ;
+; Revision Name          ; blinky_led                            ;
+; Top-level Entity Name  ; blinky_led                            ;
+; Family                 ; Agilex 7                              ;
++------------------------+---------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Analysis Source Files Read                                                                                                                                                                                                                   ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; File Name with User-Entered Path ; File Type                                                                   ; File Name with Absolute Path                              ; Library ; IP Source ; Include Files ; MD5                              ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; blinky_led.v                     ; User-Specified Verilog HDL File                                             ; D:/FILES/Projects/Aramas.ai/Sample_project_2/blinky_led.v ;         ;           ;               ; 817370e66b451cbf367ec876b9ddcdc8 ;
+; timing.sdc                       ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; D:/FILES/Projects/Aramas.ai/Sample_project_2/timing.sdc   ;         ;           ;               ; 37eccc2f14b0f76d021eabbd321d4a68 ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Warnings for blinky_led.v                                                                                                                     ;
++------------+----------+-------+---------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity ; Count ; Sample Warning                                                                                                ;
++------------+----------+-------+---------------------------------------------------------------------------------------------------------------+
+; 13469      ; Warning  ; 1     ; Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) ;
++------------+----------+-------+---------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; General Warnings                                                                                                                                                                                                              ;
++------------+------------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity         ; Count ; Sample Warning                                                                                                                                                                        ;
++------------+------------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 20759      ; Critical Warning ; 1     ; Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide. ;
++------------+------------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Design Analysis Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+    Info: Processing started: Tue Jan  6 14:53:20 2026
+    Info: System process ID: 49528
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led --quick_elab
+Info: qis_default_flow_script.tcl version: #2
+Info: Initializing Synthesis...
+Info: Project = "blinky_led"
+Info: Revision = "blinky_led"
+Info: Running Design Analysis for tile IP
+Info: Analyzing source files for Design Analysis mode for tile IP
+Info (21958): Initialized Quartus Message Database
+Critical Warning (20759): Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.
+Warning (13469): Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) File: D:/FILES/Projects/Aramas.ai/Sample_project_2/blinky_led.v Line: 20
+Info: Quartus Prime Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 467 megabytes
+    Info: Processing ended: Tue Jan  6 14:53:29 2026
+    Info: Elapsed time: 00:00:09
+    Info: System process ID: 49528
+
+

@@ -1,0 +1,120 @@
+Flow report for blinky_led
+Tue Jan  6 15:07:31 2026
+Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Flow Summary
+  2. Flow Settings
+  3. Flow Non-Default Global Settings
+  4. Flow Elapsed Time
+  5. Flow OS Summary
+  6. Flow Log
+  7. Legal Notice
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Tue Jan  6 15:07:31 2026      ;
+; Quartus Prime Version           ; 25.3.0 Build 109 09/24/2025 SC Pro Edition ;
+; Revision Name                   ; blinky_led                                 ;
+; Top-level Entity Name           ; blinky_led                                 ;
+; Family                          ; Agilex 7                                   ;
+; Device                          ; AGIB027R29A1E1VB                           ;
+; Timing Models                   ; Final                                      ;
+; Power Models                    ; Final                                      ;
+; Device Status                   ; Final                                      ;
+; Logic utilization (in ALMs)     ; 30 / 912,800 ( < 1 % )                     ;
+; Total dedicated logic registers ; 27                                         ;
+; Total pins                      ; 4 / 1,040 ( < 1 % )                        ;
+; Total block memory bits         ; 0 / 271,810,560 ( 0 % )                    ;
+; Total RAM Blocks                ; 0 / 13,272 ( 0 % )                         ;
+; Total DSP Blocks                ; 0 / 8,528 ( 0 % )                          ;
+; Total HSSI HPS                  ; 0 / 1 ( 0 % )                              ;
+; Total HSSI R-Tiles              ; 0 / 3 ( 0 % )                              ;
+; Total PLLs                      ; 0 / 36 ( 0 % )                             ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 01/06/2026 14:53:51 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; blinky_led          ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++--------------------------+-----------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                                                     ; Default Value ; Entity Name ; Section Id ;
++--------------------------+-----------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 176305466433098.176769143150948                           ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP   ; 100                                                       ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP   ; 0                                                         ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files ; --            ; --          ; --         ;
++--------------------------+-----------------------------------------------------------+---------------+-------------+------------+
+
+
++------------------------------------------------------+
+; Flow Elapsed Time                                    ;
++-----------------+--------------+---------------------+
+; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
++-----------------+--------------+---------------------+
+; Synthesis       ; 00:00:12     ; 762 MB              ;
+; Fitter          ; 00:10:28     ; 17122 MB            ;
+; Timing Analyzer ; 00:00:24     ; 1749 MB             ;
+; Assembler       ; 00:02:06     ; 8784 MB             ;
+; Total           ; 00:13:10     ; --                  ;
++-----------------+--------------+---------------------+
+
+
++-------------------------------------------------------------------------------+
+; Flow OS Summary                                                               ;
++-----------------+------------------+------------+------------+----------------+
+; Module Name     ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++-----------------+------------------+------------+------------+----------------+
+; Synthesis       ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Fitter          ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Timing Analyzer ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
+; Assembler       ; LAPTOP-BUVLRENO  ; Windows 11 ; 10.0.22631 ; x86_64         ;
++-----------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
+quartus_fit --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
+quartus_sta blinky_led -c blinky_led --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
