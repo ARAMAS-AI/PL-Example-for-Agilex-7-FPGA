@@ -5,7 +5,7 @@ This repository contains a baseline FPGA design ("Blinky") for the Intel Agilex 
 ## Hardware Support
 
 * **Board**: Intel Agilex 7 I-Series FPGA Development Kit
-* **Device**: `AGIB027R29A1E2VR3`
+* **Device**: `AGIB027R29A1E1V`
 
 ## Project Structure
 
