@@ -1,0 +1,15 @@
+Power Analyzer Status : Successful - Tue Jan  6 17:10:40 2026
+Quartus Prime Version : 25.3.0 Build 109 09/24/2025 SC Pro Edition
+Revision Name : blinky_led
+Top-level Entity Name : blinky_led
+Family : Agilex 7
+Device : AGIB027R29A1E1VB
+Timing Models : Final
+Power Models : Final
+Device Status : Final
+Total Dynamic Power Dissipation : 3.724 W
+Total Static Power Dissipation (Before Savings) : 4.811 W
+Static Power Dissipation Savings : -1.593 W
+SmartVID Power Savings : -0.339 W
+Total On-Chip Power Dissipation : 6.604 W
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

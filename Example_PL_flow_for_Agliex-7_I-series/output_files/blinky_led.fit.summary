@@ -1,4 +1,4 @@
-Fitter Status : Successful - Tue Jan  6 15:04:32 2026
+Fitter Status : Successful - Tue Jan  6 17:03:23 2026
 Quartus Prime Version : 25.3.0 Build 109 09/24/2025 SC Pro Edition
 Revision Name : blinky_led
 Top-level Entity Name : blinky_led
@@ -7,7 +7,7 @@ Device : AGIB027R29A1E1VB
 Timing Models : Final
 Power Models : Final
 Device Status : Final
-Logic utilization (in ALMs) : 30 / 912,800 ( < 1 % )
+Logic utilization (in ALMs) : 29 / 912,800 ( < 1 % )
 Total dedicated logic registers : 27
 Total pins : 4 / 1,040 ( < 1 % )
 Total block memory bits : 0 / 271,810,560 ( 0 % )

@@ -1,0 +1,232 @@
+Power Analyzer report for blinky_led
+Tue Jan  6 17:10:41 2026
+Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Power Analyzer Summary
+  3. Power Analyzer Settings
+  4. Power Analyzer Messages
+  5. Power Analyzer Generated Files
+  6. Current Drawn per Supply
+  7. On-Chip Power Dissipation by Block Type
+  8. On-Chip Power Dissipation by Hierarchy
+  9. Confidence Metric Details
+ 10. Signal Activities
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++----------------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                             ;
++-------------------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                           ; Successful - Tue Jan  6 17:10:40 2026            ;
+; Quartus Prime Version                           ; 25.3.0 Build 109 09/24/2025 SC Pro Edition       ;
+; Revision Name                                   ; blinky_led                                       ;
+; Top-level Entity Name                           ; blinky_led                                       ;
+; Family                                          ; Agilex 7                                         ;
+; Device                                          ; AGIB027R29A1E1VB                                 ;
+; Timing Models                                   ; Final                                            ;
+; Power Models                                    ; Final                                            ;
+; Device Status                                   ; Final                                            ;
+; Total Dynamic Power Dissipation                 ; 3.724 W                                          ;
+; Total Static Power Dissipation (Before Savings) ; 4.811 W                                          ;
+; Static Power Dissipation Savings                ; -1.593 W                                         ;
+; SmartVID Power Savings                          ; -0.339 W                                         ;
+; Total On-Chip Power Dissipation                 ; 6.604 W                                          ;
+; Power Estimation Confidence                     ; Low: user provided insufficient toggle rate data ;
++-------------------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                              ;
++------------------------------------------------------------------+-----------------+-----------------+
+; Option                                                           ; Setting         ; Default Value   ;
++------------------------------------------------------------------+-----------------+-----------------+
+; Enable parallel Assembler and Timing Analyzer during compilation ; On              ; On              ;
+; Enable compact report table                                      ; Off             ; Off             ;
+; Enable Design Assistant in the compilation flow                  ; On              ; On              ;
+; Design Assistant include IP blocks                               ; Off             ; Off             ;
+; High fanout net threshold for RAM inference                      ; 15              ; 15              ;
+; Design Assistant limit on reported violations per rule           ; 5000            ; 5000            ;
+; Allow RAM Retiming                                               ; Off             ; Off             ;
+; Allow DSP Retiming                                               ; Off             ; Off             ;
+; Default Power Toggle Rate                                        ; 12.5%           ; 12.5%           ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%           ; 12.5%           ;
+; Use vectorless estimation                                        ; Off             ; On              ;
+; Use Input Files                                                  ; Off             ; Off             ;
+; Filter Glitches in VCD File Reader                               ; On              ; On              ;
+; Power Analyzer Report Signal Activity                            ; Off             ; Off             ;
+; Power Analyzer Report Power Dissipation                          ; Off             ; Off             ;
+; Device Power Characteristics                                     ; MAXIMUM         ; MAXIMUM         ;
+; Specified Junction Temperature                                   ; 25              ; 25              ;
+; Ambient Temperature                                              ; 50              ; 50              ;
+; Find cooling solution for maximum junction temperature limit     ; Off             ; Off             ;
+; Maximum junction temperature limit                               ; 100             ; 100             ;
+; Case-to-ambient thermal resistance                               ; 0.5             ; 0.5             ;
+; User life                                                        ; 11.4            ; 11.4            ;
+; Apply additional margin                                          ; Off             ; Off             ;
+; Apply additional margin                                          ; 0.0             ; 0.0             ;
+; Temperature measurement method                                   ; DTS             ; DTS             ;
+; Power and Thermal Analyzer Export File                           ; blinky_led.qpta ; blinky_led.qpta ;
+; % Heat through the top of the package                            ; 100             ; 100             ;
++------------------------------------------------------------------+-----------------+-----------------+
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
+    Info: Processing started: Tue Jan  6 17:04:38 2026
+    Info: System process ID: 17984
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
+Info (16677): Loading final database.
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16678): Successfully loaded final database: elapsed time is 00:00:11.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (19539): Reading the HDL-embedded SDC files elapsed 00:00:00.
+Info (332104): Reading SDC File: 'timing.sdc'
+Info (19449): Reading SDC files elapsed 00:00:00.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Warning (22299): The power calculated in the constant junction temperature mode is not representative of actual power during use. It is unlikely that all components of the die are at uniform temperature during normal operation. For more representative power, use the other calculation modes that utilize the thermal calculator.
+Info (25512): Created Power and Thermal Analyzer export file "blinky_led.qpta"
+Info (215049): Average toggle rate for this design is 13.977 millions of transitions / sec.
+Info (215031): Total on-chip power estimate for the design is 6603.64 mW.
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4995 megabytes
+    Info: Processing ended: Tue Jan  6 17:10:44 2026
+    Info: Elapsed time: 00:06:06
+    Info: System process ID: 17984
+
+
++-----------------------------------------------------------------+
+; Power Analyzer Generated Files                                  ;
++-----------------------------------------------+-----------------+
+; Description                                   ; Filename        ;
++-----------------------------------------------+-----------------+
+; Design summary for Power and Thermal Analyzer ; blinky_led.qpta ;
++-----------------------------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn per Supply                                                                                                ;
++---------------+---------+---------------------+-----------------------+----------------------+--------------------------+
+; Supply        ; Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ; SmartVID Current Savings ;
++---------------+---------+---------------------+-----------------------+----------------------+--------------------------+
+; VCC           ; VID     ; 3.463 A             ; 1.882 A               ; 2.047 A              ; 0.466 A                  ;
+; VCCADC        ; 1.800 V ; 0.002 A             ; 0.001 A               ; 3.83E-04 A           ; 0.000 A                  ;
+; VCCA_PLL      ; 1.200 V ; 0.026 A             ; 0.002 A               ; 0.024 A              ; 0.000 A                  ;
+; VCCBAT        ; 1.800 V ; 5.46E-07 A          ; 0.000 A               ; 5.46E-07 A           ; 0.000 A                  ;
+; VCCFUSEWR_SDM ; 1.800 V ; 1.47E-04 A          ; 0.000 A               ; 1.47E-04 A           ; 0.000 A                  ;
+; VCCH          ; 0.800 V ; 0.053 A             ; 0.012 A               ; 0.041 A              ; 0.000 A                  ;
+; VCCH_SDM      ; 0.900 V ; 1.51E-04 A          ; 0.000 A               ; 1.51E-04 A           ; 0.000 A                  ;
+; VCCIO_HPS     ; 1.800 V ; 4.74E-04 A          ; 4.01E-04 A            ; 7.26E-05 A           ; 0.000 A                  ;
+; VCCIO_PIO_2B  ; 1.200 V ; 0.243 A             ; 0.226 A               ; 0.017 A              ; 0.000 A                  ;
+; VCCIO_PIO_2C  ; 1.200 V ; 0.243 A             ; 0.226 A               ; 0.017 A              ; 0.000 A                  ;
+; VCCIO_PIO_2E  ; 1.200 V ; 0.121 A             ; 0.113 A               ; 0.008 A              ; 0.000 A                  ;
+; VCCIO_PIO_2F  ; 1.200 V ; 0.121 A             ; 0.113 A               ; 0.008 A              ; 0.000 A                  ;
+; VCCIO_PIO_3A  ; 1.200 V ; 0.121 A             ; 0.113 A               ; 0.008 A              ; 0.000 A                  ;
+; VCCIO_PIO_3B  ; 1.200 V ; 0.243 A             ; 0.226 A               ; 0.017 A              ; 0.000 A                  ;
+; VCCIO_PIO_3C  ; 1.200 V ; 0.243 A             ; 0.226 A               ; 0.017 A              ; 0.000 A                  ;
+; VCCIO_PIO_3D  ; 1.200 V ; 0.121 A             ; 0.113 A               ; 0.008 A              ; 0.000 A                  ;
+; VCCIO_PIO_SDM ; 1.200 V ; 1.28E-05 A          ; 0.000 A               ; 1.28E-05 A           ; 0.000 A                  ;
+; VCCIO_SDM     ; 1.800 V ; 3.09E-04 A          ; 2.79E-04 A            ; 2.97E-05 A           ; 0.000 A                  ;
+; VCCL_HPS      ; 0.860 V ; 0.210 A             ; 0.035 A               ; 0.175 A              ; 0.000 A                  ;
+; VCCL_SDM      ; 0.800 V ; 0.101 A             ; 0.069 A               ; 0.032 A              ; 0.000 A                  ;
+; VCCP          ; VID     ; 0.333 A             ; 0.246 A               ; 0.117 A              ; 0.030 A                  ;
+; VCCPLLDIG_HPS ; 0.860 V ; 0.008 A             ; 0.007 A               ; 5.26E-04 A           ; 0.000 A                  ;
+; VCCPLLDIG_SDM ; 0.800 V ; 1.06E-04 A          ; 1.05E-06 A            ; 1.05E-04 A           ; 0.000 A                  ;
+; VCCPLL_HPS    ; 1.800 V ; 0.022 A             ; 0.022 A               ; 3.56E-05 A           ; 0.000 A                  ;
+; VCCPLL_SDM    ; 1.800 V ; 7.92E-07 A          ; 3.62E-07 A            ; 4.30E-07 A           ; 0.000 A                  ;
+; VCCPT         ; 1.800 V ; 0.035 A             ; 0.010 A               ; 0.026 A              ; 0.000 A                  ;
+; VCCRCORE      ; 1.200 V ; 2.277 A             ; 0.013 A               ; 2.265 A              ; 0.000 A                  ;
++---------------+---------+---------------------+-----------------------+----------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; On-Chip Power Dissipation by Block Type                                                                                  ;
++---------------+---------------------------------------+---------------------------------+--------------------------------+
+; Block Type    ; Total On-Chip Power by Block Type (W) ; Block On-Chip Dynamic Power (W) ; Block On-Chip Static Power (W) ;
++---------------+---------------------------------------+---------------------------------+--------------------------------+
+; Clock         ; 0.072                                 ; 0.001                           ; 0.071                          ;
+; DSP           ; 0.113                                 ; 0.027                           ; 0.085                          ;
+; IO            ; 2.122                                 ; 1.863                           ; 0.259                          ;
+; Logic         ; 1.320                                 ; 1.25E-04                        ; 1.320                          ;
+; Miscellaneous ; 3.871                                 ; 1.249                           ; 2.623                          ;
+; PLL           ; 0.024                                 ; 0.000                           ; 0.024                          ;
+; RAM           ; 0.515                                 ; 0.150                           ; 0.365                          ;
+; Transceiver   ; 0.498                                 ; 0.434                           ; 0.064                          ;
++---------------+---------------------------------------+---------------------------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; On-Chip Power Dissipation by Hierarchy                                                                                                              ;
++----------------------------+------------------------------------------+-----------------------------------------+---------------------+-------------+
+; Compilation Hierarchy Node ; Cumulative Dynamic On-Chip Power (W) (1) ; Current Level Dynamic On-Chip Power (W) ; Full Hierarchy Name ; Entity Name ;
++----------------------------+------------------------------------------+-----------------------------------------+---------------------+-------------+
+; Global Resources           ; 3.724                                    ; 3.714                                   ;                     ;             ;
+;     |                      ; 0.011                                    ; 0.011                                   ;                     ; blinky_led  ;
++----------------------------+------------------------------------------+-----------------------------------------+---------------------+-------------+
+(1) Cumulative power is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                       ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Data Source                                                                            ; Total       ; Pin        ; Registered  ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Simulation (from file)                                                                 ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Node, entity or clock assignment                                                       ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 3 (2.5%)    ; 2 (8.7%)   ; 0 (0.0%)    ; 1 (1.4%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (2.5%)    ; 2 (8.7%)   ; 0 (0.0%)    ; 1 (1.4%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Vectorless estimation                                                                  ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Default assignment                                                                     ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 93 (76.9%)  ; 2 (8.7%)   ; 27 (100.0%) ; 64 (90.1%)    ;
+;     -- Number of signals with Static Probability from Default assignment               ; 118 (97.5%) ; 21 (91.3%) ; 27 (100.0%) ; 70 (98.6%)    ;
+;                                                                                        ;             ;            ;             ;               ;
+; Assumed 0                                                                              ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 25 (20.7%)  ; 19 (82.6%) ; 0 (0.0%)    ; 6 (8.5%)      ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "Power Analyzer Settings".
+
+

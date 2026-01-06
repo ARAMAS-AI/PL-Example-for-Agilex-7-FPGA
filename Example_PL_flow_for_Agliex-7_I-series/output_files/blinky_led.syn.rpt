@@ -1,5 +1,5 @@
 Synthesis report
-Tue Jan  6 14:54:00 2026
+Tue Jan  6 16:45:21 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -48,13 +48,13 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Synthesis Summary                                                                 ;
 +--------------------------------------+--------------------------------------------+
-; Synthesis Status                     ; Successful - Tue Jan  6 14:54:00 2026      ;
+; Synthesis Status                     ; Successful - Tue Jan  6 16:45:21 2026      ;
 ; Revision Name                        ; blinky_led                                 ;
 ; Top-level Entity Name                ; blinky_led                                 ;
 ; Family                               ; Agilex 7                                   ;
 ; Quartus Prime Version                ; 25.3.0 Build 109 09/24/2025 SC Pro Edition ;
 ; Device                               ; AGIB027R29A1E1VB                           ;
-; Logic utilization estimate (in ALMs) ; 18 / 912,800 ( < 1 % )                     ;
+; Logic utilization estimate (in ALMs) ; 20 / 912,800 ( < 1 % )                     ;
 ; Total dedicated logic registers      ; 27                                         ;
 ; Estimated DSP Blocks Post-Merging    ; 0                                          ;
 +--------------------------------------+--------------------------------------------+
@@ -169,14 +169,14 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------------------------+-------------------------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synthesis Source Files Read                                                                                                                                                                                                                         ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
-; File Name with User-Entered Path ; File Type                                                                   ; File Name with Absolute Path                              ; Library ; IP Source ; Include Files ; MD5                              ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
-; blinky_led.v                     ; User-Specified Verilog HDL File                                             ; D:/FILES/Projects/Aramas.ai/Sample_project_2/blinky_led.v ;         ;           ;               ; 817370e66b451cbf367ec876b9ddcdc8 ;
-; timing.sdc                       ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; D:/FILES/Projects/Aramas.ai/Sample_project_2/timing.sdc   ;         ;           ;               ; 37eccc2f14b0f76d021eabbd321d4a68 ;
-+----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------+---------+-----------+---------------+----------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                                                                                                       ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; File Name with User-Entered Path ; File Type                                                                   ; File Name with Absolute Path                                                            ; Library ; IP Source ; Include Files ; MD5                              ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
+; blinky_led.v                     ; User-Specified Verilog HDL File                                             ; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v ;         ;           ;               ; 1a1b648b9d959cd0ce9cc156709a1a93 ;
+; timing.sdc                       ; User-Specified SDC File (Read by the Timing Analyzer at each fitter stage)  ; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/timing.sdc   ;         ;           ;               ; 37eccc2f14b0f76d021eabbd321d4a68 ;
++----------------------------------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+-----------+---------------+----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -205,7 +205,7 @@ All Instances:
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Max Depth ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+---------------------+-------------+--------------+
-; |                          ; 34 (34)             ; 27 (27)                   ; 0                 ; 0          ; 3    ; 3.5 (3.5) ; |                   ; blinky_led  ; altera_work  ;
+; |                          ; 35 (35)             ; 27 (27)                   ; 0                 ; 0          ; 3    ; 3.5 (3.5) ; |                   ; blinky_led  ; altera_work  ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+-----------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,10 +242,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; boundary_port          ; 3                                       ;
 ; tennm_ff               ; 27                                      ;
 ;     SCLR               ; 27                                      ;
-; tennm_lcell_comb       ; 34                                      ;
+; tennm_lcell_comb       ; 35                                      ;
 ;     arith              ; 26                                      ;
 ;         1 data inputs  ; 26                                      ;
-;     normal             ; 8                                       ;
+;     normal             ; 9                                       ;
+;         1 data inputs  ; 1                                       ;
 ;         3 data inputs  ; 1                                       ;
 ;         4 data inputs  ; 1                                       ;
 ;         5 data inputs  ; 2                                       ;
@@ -255,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Max carry chain length ; 26                                      ;
 ;                        ;                                         ;
 ; Max LUT depth          ; 3.50                                    ;
-; Average LUT depth      ; 2.74                                    ;
+; Average LUT depth      ; 2.72                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -264,15 +265,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 18                ;
+; Estimate of Logic utilization (ALMs needed) ; 20                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 34                ;
+; Combinational ALUT usage for logic          ; 35                ;
 ;     -- 8 input functions                    ; 0                 ;
 ;     -- 7 input functions                    ; 0                 ;
 ;     -- 6 input functions                    ; 4                 ;
 ;     -- 5 input functions                    ; 2                 ;
 ;     -- 4 input functions                    ; 1                 ;
-;     -- <=3 input functions                  ; 27                ;
+;     -- <=3 input functions                  ; 28                ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 27                ;
 ;                                             ;                   ;
@@ -284,8 +285,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clk               ;
 ; Maximum fan-out                             ; 27                ;
-; Total fan-out                               ; 174               ;
-; Average fan-out                             ; 2.72              ;
+; Total fan-out                               ; 175               ;
+; Average fan-out                             ; 2.69              ;
 +---------------------------------------------+-------------------+
 
 
@@ -298,14 +299,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------+----------+-------+---------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; General Warnings                                                                                                                                                                                                                                                                     ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Message ID ; Severity         ; Count ; Sample Warning                                                                                                                                                                                                                               ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 20759      ; Critical Warning ; 1     ; Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.                                                        ;
-; 21620      ; Warning          ; 1     ; Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.drc.partitioned.rpt' for more information ;
-+------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; General Warnings                                                                                                                                                                                                                                                                                                   ;
++------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity         ; Count ; Sample Warning                                                                                                                                                                                                                                                             ;
++------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 20759      ; Critical Warning ; 1     ; Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.                                                                                      ;
+; 21620      ; Warning          ; 1     ; Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information ;
++------------+------------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -314,8 +315,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 14:53:49 2026
-    Info: System process ID: 50948
+    Info: Processing started: Tue Jan  6 16:45:10 2026
+    Info: System process ID: 35432
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -325,33 +326,33 @@ Info (21958): Initialized Quartus Message Database
 Info: Analyzing source files
 Critical Warning (20759): Use the Reset Release IP in Intel Agilex 7 FPGA designs to ensure a successful configuration. For more information about the Reset Release IP, refer to the Configuration User Guide.
 Info: Elaborating from top-level entity "blinky_led"
-Warning (13469): Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) File: D:/FILES/Projects/Aramas.ai/Sample_project_2/blinky_led.v Line: 20
+Warning (13469): Verilog HDL assignment warning at blinky_led.v(20): truncated value with size 27 to match size of target (26) File: D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/blinky_led.v Line: 20
 Info: Found 1 design entities
 Info: There are 1 partitions after elaboration.
 Info: DA report generation in native DNI mode
 Info (21615): Running Design Assistant Rules for snapshot 'partitioned'
 Info: No waiver waived any violations
 Info (22360): Design Assistant Results: 9 of 10 enabled rules passed, and 1 rules was disabled, in snapshot 'partitioned'
-Warning (21620): Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.drc.partitioned.rpt' for more information
+Warning (21620): Design Assistant Results: 1 of 1 High severity rules issued violations in snapshot 'partitioned'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.partitioned.rpt' for more information
 Info (21621): Design Assistant Results: 0 of 1 Medium severity rules issued violations in snapshot 'partitioned'
 Info (21622): Design Assistant Results: 0 of 8 Low severity rules issued violations in snapshot 'partitioned'
 Info: Synthesizing partition "root_partition"
-Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 34 logic cells
+    Info (21061): Implemented 35 logic cells
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info (21615): Running Design Assistant Rules for snapshot 'synthesized'
 Info: No waiver waived any violations
 Info (22360): Design Assistant Results: 12 of 13 enabled rules passed, and 7 rules was disabled, in snapshot 'synthesized'
 Info (21661): Design Assistant Results: 0 of 1 High severity rules issued violations in snapshot 'synthesized'
-Info (21621): Design Assistant Results: 1 of 6 Medium severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.drc.synthesized.rpt' for more information
+Info (21621): Design Assistant Results: 1 of 6 Medium severity rules issued violations in snapshot 'synthesized'. Please refer to DRC report 'D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.drc.synthesized.rpt' for more information
 Info (21622): Design Assistant Results: 0 of 6 Low severity rules issued violations in snapshot 'synthesized'
 Info: Quartus Prime Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 762 megabytes
-    Info: Processing ended: Tue Jan  6 14:54:01 2026
+    Info: Processing ended: Tue Jan  6 16:45:22 2026
     Info: Elapsed time: 00:00:12
-    Info: System process ID: 50948
+    Info: System process ID: 35432
 
 

@@ -1,5 +1,5 @@
 Fitter Retime Stage Report for blinky_led
-Tue Jan  6 15:02:36 2026
+Tue Jan  6 17:01:46 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -74,8 +74,8 @@ Info (20030): Parallel compilation is enabled and will use 12 of the 12 processo
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 14:54:02 2026
-    Info: System process ID: 34884
+    Info: Processing started: Tue Jan  6 16:45:23 2026
+    Info: System process ID: 81952
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = blinky_led
@@ -83,6 +83,6 @@ Info: Revision = blinky_led
 Info (17966): Starting Hyper-Retimer operations.
 Info (18914): The Hyper-Retimer was unable to optimize the design due to retiming restrictions. Run Fast Forward Timing Closure Recommendations to see step-by-step suggestions for design changes and show the estimated performance improvement from making these changes.
 Info (17968): Completed Hyper-Retimer operations.
-Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:02
+Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:03
 
 

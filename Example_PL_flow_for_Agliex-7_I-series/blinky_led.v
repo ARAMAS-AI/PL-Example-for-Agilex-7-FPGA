@@ -11,7 +11,7 @@ module blinky_led #(
  assign led_out = led_reg;
  
  always@(posedge clk) begin
-	if(rst) begin
+	if(!rst) begin
 		led_reg <= 0;
 		counter <= 0;
 	end

@@ -1,5 +1,5 @@
 Assembler report for blinky_led
-Tue Jan  6 15:07:31 2026
+Tue Jan  6 17:26:24 2026
 Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
 
 
@@ -12,7 +12,7 @@ Quartus Prime Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
   4. Parallel Compilation
   5. Assembler Messages
   6. Assembler Generated Files
-  7. Assembler Device Options: D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.sof
+  7. Assembler Device Options: D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.sof
 
 
 
@@ -39,7 +39,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jan  6 15:07:31 2026 ;
+; Assembler Status      ; Successful - Tue Jan  6 17:26:24 2026 ;
 ; Revision Name         ; blinky_led                            ;
 ; Top-level Entity Name ; blinky_led                            ;
 ; Family                ; Agilex 7                              ;
@@ -156,38 +156,38 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 25.3.0 Build 109 09/24/2025 SC Pro Edition
-    Info: Processing started: Tue Jan  6 15:05:25 2026
-    Info: System process ID: 80652
+    Info: Processing started: Tue Jan  6 17:24:05 2026
+    Info: System process ID: 82504
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off blinky_led -c blinky_led
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
-Info (16678): Successfully loaded final database: elapsed time is 00:00:11.
+Info (16678): Successfully loaded final database: elapsed time is 00:00:14.
 Info (20553): Using CVP Hash 0123456789ABCDEF001122334455667788889999AAAABBBBCCCCDDDDEEEEFFFF
 Warning (20536): Programming file generation feature has been removed from the compilation flow and the corresponding legacy settings in the Quartus Prime Setting File (.qsf) have been ignored: USE_CONFIGURATION_DEVICE. Use Programmer File Generator or Convert Programming File tool to generate a programming file.
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 8784 megabytes
-    Info: Processing ended: Tue Jan  6 15:07:32 2026
-    Info: Elapsed time: 00:02:07
-    Info: System process ID: 80652
+    Info: Peak virtual memory: 8776 megabytes
+    Info: Processing ended: Tue Jan  6 17:26:26 2026
+    Info: Elapsed time: 00:02:21
+    Info: System process ID: 82504
 
 
-+--------------------------------------------------------------------------+
-; Assembler Generated Files                                                ;
-+--------------------------------------------------------------------------+
-; File Name                                                                ;
-+--------------------------------------------------------------------------+
-; D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.sof ;
-+--------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                              ;
++--------------------------------------------------------------------------------------------------------+
+; File Name                                                                                              ;
++--------------------------------------------------------------------------------------------------------+
+; D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.sof ;
++--------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/FILES/Projects/Aramas.ai/Sample_project_2/output_files/blinky_led.sof ;
-+----------------+-----------------------------------------------------------------------------------+
-; Option         ; Setting                                                                           ;
-+----------------+-----------------------------------------------------------------------------------+
-; JTAG usercode  ; 0xFFFFFFFF                                                                        ;
-; Checksum       ; 0x76238B7B                                                                        ;
-; Design hash    ; 176BF92574118235B9F94B2450C5CC49FF88BA32D746A1B22702A0D3FFF6BE01                  ;
-+----------------+-----------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/FILES/Projects/Aramas.ai/Projects/Example_PL_flow_for_Agliex-7_I-series/output_files/blinky_led.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                         ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                      ;
+; Checksum       ; 0x76238F4F                                                                                                      ;
+; Design hash    ; 4E5B599CD13D1B66393E8F53FE90CDEC7A9E7B8805A02FD968FDAD351D1AB3A1                                                ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
 
 
